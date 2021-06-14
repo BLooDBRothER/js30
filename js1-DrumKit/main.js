@@ -52,7 +52,7 @@ window.addEventListener("keydown", function(e){
 
 function addtag(data){
     let dt = document.createElement("p");
-    dt.innerHTML = data;
+    dt.innerHTML = data.toUpperCase();
     txt.appendChild(dt);
     setTimeout(()=>{
         remtag(dt);
