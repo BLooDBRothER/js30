@@ -41,11 +41,12 @@ keys.forEach(key => {
 });
 
 window.addEventListener("keydown", function(e){
-    const aud = document.querySelector(`audio[data-key=${t[e.keyCode]}]`);
-    const key = document.querySelector(`.key[data-key='${e.keyCode}']`);
+    let ascii = e.key.toUpperCase().charCodeAt();
+    const aud = document.querySelector(`audio[data-key=${t[ascii]}]`);
+    const key = document.querySelector(`.key[data-key='${ascii}']`);
     if(!aud) return;
     key.classList.add("pressed");
-    check(t[e.keyCode], snd);
+    check(t[ascii], snd);
     aud.currentTime = 0;
     aud.play();
 });
