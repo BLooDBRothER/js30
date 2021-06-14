@@ -9,6 +9,33 @@ html{
     background-size: cover;
 } 
 
+.txt-cnt{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    color: aqua;
+    text-align: center;
+    height: 30vh;
+    width: 50%;
+}
+
+.green{
+    color: greenyellow;
+}
+
+.point{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 3.5rem;
+    color: yellowgreen;
+}
+
 .keys{
     display: flex;
     flex-direction: column;
@@ -31,6 +58,15 @@ html{
     border: solid 1px yellow;
     text-align: center;
 }
+
+
+.pressed{
+    background-color: rgb(208, 255, 0);
+    scale: 1.1;
+    color: rgb(0, 0, 0);
+    transition: .2s all;
+}
+
 
 code{
     margin-bottom: .3rem;
