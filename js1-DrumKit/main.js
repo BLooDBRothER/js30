@@ -37,11 +37,19 @@ let t = {
 keys.forEach(key => {
     key.addEventListener("transitionend", function(e){
         key.classList.remove("pressed");
-    })
+    });
+
+    key.addEventListener("click", (e) => {
+        activateKey(key.firstElementChild.innerHTML);
+    });
 });
 
-window.addEventListener("keydown", function(e){
-    let ascii = e.key.toUpperCase().charCodeAt();
+window.addEventListener("keydown", (e) => {
+    activateKey(e.key)
+});
+
+function activateKey(keyValue){
+    let ascii = keyValue.length == 1 ? keyValue.toUpperCase().charCodeAt() : "";
     const aud = document.querySelector(`audio[data-key=${t[ascii]}]`);
     const key = document.querySelector(`.key[data-key='${ascii}']`);
     if(!aud) return;
@@ -49,7 +57,7 @@ window.addEventListener("keydown", function(e){
     check(t[ascii], snd);
     aud.currentTime = 0;
     aud.play();
-});
+}
 
 function addtag(data){
     let dt = document.createElement("p");
