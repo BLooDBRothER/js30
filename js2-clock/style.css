@@ -1,0 +1,54 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: url("./assets/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.cl-body{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 10px solid #FCA4AA;
+    position: relative;
+}
+
+.hr, .min, .sec{
+    position: absolute;
+    width: 50%;
+    height: 5px;
+    background-color: #b36268;
+    top: 50%;
+    border-radius: 20px 0 0 20px;
+}
+
+.hr{
+    width: 30%;
+    right: 50%;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+}
+
+.cen{
+    width: 20px;
+    height: 20px;
+    background-color: #FCA4AA;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sec{
+    transform-origin: 100%;
+    
+    transition: all .1s ease;
+    background-color: #FCA4AA;
+}
