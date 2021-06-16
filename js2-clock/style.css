@@ -11,6 +11,12 @@ html{
     min-height: 100vh;
 }
 
+.clock{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
 .cl-body{
     width: 400px;
     height: 400px;
@@ -26,13 +32,12 @@ html{
     background-color: #b36268;
     top: 50%;
     border-radius: 20px 0 0 20px;
+    transform-origin: 100%;
 }
 
 .hr{
     width: 30%;
     right: 50%;
-    transform: rotate(90deg);
-    transform-origin: 100%;
 }
 
 .cen{
@@ -47,8 +52,6 @@ html{
 }
 
 .sec{
-    transform-origin: 100%;
-    
-    transition: all .1s ease;
+    transition: all .1s cubic-bezier(0, 2.15, 0.25, 1);
     background-color: #FCA4AA;
 }
