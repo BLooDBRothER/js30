@@ -1,3 +1,5 @@
+//setInterval(setDate, 1000);
+
 let sechand = document.querySelector(".sec");
 let minhand = document.querySelector(".min");
 let hrhand = document.querySelector(".hr");
@@ -12,4 +14,13 @@ function setDate(){
     hrhand.style.transform = `rotate(${(hr*30)+90}deg)`;
 }
 
-setInterval(setDate, 1000);
+function setDay(){
+    let date = new Date();
+    const day = document.querySelector(`.day span[data-day="${date.getDay()}"]`);
+    day.style.color = "#b36268";
+}
+
+//setDay();
+//setDate();
+
+
