@@ -9,6 +9,7 @@ html{
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .clock{
@@ -97,19 +98,20 @@ html{
     background-color: #FCA4AA;
     left: 50%;
     bottom: 50%;
-    transform: translateX(-50%) rotate(var(--hand));
+    transform: translateX(-50%) rotate(calc(var(--hand) * 1deg));
     transform-origin: bottom;
     border-radius: 20px 20px 0px 0px;
 }
 
 .hr{
-    --hand: 90deg;
+    --hand: 90;
     height: 30%;   
 }
 
 .sec{
-    --hand: 180deg;
+    --hand: 180;
     background-color: #e6424d;
+    /* transition: transform .1s cubic-bezier(0, 2.15, 0.25, 1); */
 }
 
 .cen{
@@ -124,10 +126,19 @@ html{
     transform: translate(-50%, -50%);
 }
 
-/* .sec{
-    transition: transform .1s cubic-bezier(0, 2.15, 0.25, 1);
-    background-color: #FCA4AA;
-} */
+.date-disp{
+    position: absolute;
+    bottom: 25%;
+    width: 100%;
+    z-index: -1;
+    text-align: center;
+    color: #e6424d;
+    font-weight: bold;
+}
+
+.date-disp .colon{
+    animation: blink 1s ease-in-out infinite;
+}
 
 .day{
     font-size: clamp(1rem, 5vw, 2rem);
@@ -135,10 +146,25 @@ html{
     color: #FCA4AA;
     font-weight: bold;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .day span{
     padding: 0 clamp(.1rem, 1vw, .5rem);
+}
+
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: .1;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 @media (max-width: 850px){
@@ -160,5 +186,8 @@ html{
     }
     .cl-body{
         width: 80%;
+    }
+    .day{
+        flex-wrap: wrap;
     }
 }
