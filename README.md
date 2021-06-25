@@ -5,6 +5,9 @@
 
 1. [JS 1 Drum kit](https://30-js.netlify.app/js1-drumkit/)
 2. [JS 2 Clock](https://30-js.netlify.app/js2-clock)
+3. JS 3 css variable
+    * [JS 30 - 3 WES BOS](https://30-js.netlify.app/js3-cssVariable/index.html)
+    * [Audio Slider](https://vloume-track-change.netlify.app/)
 
 ## Reference
 
