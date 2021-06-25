@@ -13,3 +13,4 @@
 
 * [JavaScript 30 - playlist by WesBos](https://www.youtube.com/watch?v=VuN8qwZoego&list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH)
 * [Web dev - js 2 clock](https://www.youtube.com/watch?v=Ki0XXrlKlHY&t=917s)
+* [Full screen touch slider](https://www.youtube.com/watch?v=5bxFSOA5JYo&t=1701s)
