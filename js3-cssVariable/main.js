@@ -4,16 +4,19 @@ function setcolor(){
     document.documentElement.style.setProperty(`--base`, inputs[2].value);
 }
 
-function handleUpdates(){
-    console.log(this.value, this.dataset);
-    let val = this.dataset.sizing || "";
-    let output = this.value+val;
-    document.documentElement.style.setProperty(`--${this.name}`, output);
+function handleUpdates(inp){
+    let val = inp.dataset.sizing || "";
+    let output = inp.value+val;
+    document.documentElement.style.setProperty(`--${inp.name}`, output);
 }
 
-inputs.forEach(input => input.addEventListener("input", handleUpdates));
-//inputs.forEach(input => input.addEventListener("wheel", handleUpdates));
+inputs.forEach(input => input.addEventListener("input", () => { handleUpdates(input); }));
 
-//console.log(window.screen.orientation.lock);
+inputs.forEach(input => input.addEventListener("wheel", (e) => {
+    if(input.name == "base") return;
+    e.deltaY > 0 ? input.value-- : input.value++;
+    handleUpdates(input);
+}));
+
 
 setcolor();
