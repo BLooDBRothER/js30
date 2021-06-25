@@ -22,6 +22,33 @@
             font-size: 2rem;
             color: whitesmoke;
         }
+        li{
+            margin: 1rem 0;
+            padding: 1rem;
+            border: 1px solid;
+            animation: changeborder .3s ease infinite;
+            text-align: center;
+        }
+        @keyframes changeborder{
+            10%{
+                border-color: red;
+            }
+            30%{
+                border-color: yellow;
+            }
+            50%{
+                border-color: aqua;
+            }
+            70%{
+                border-color: greenyellow;
+            }
+            90%{
+                border-color: palevioletred;
+            }
+            100%{
+                border-color: red;
+            }
+        }
         a{
             text-decoration: none;
             font-size: 2rem;
