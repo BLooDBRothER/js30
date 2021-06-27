@@ -1,0 +1,54 @@
+ *, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body {
+     min-height: 100vh;
+     background-color: rgb(1, 6, 29);
+     color: rgb(149, 255, 100);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     font-size: clamp(1rem, 4vw, 1.5rem);
+     text-align: center;
+     margin: 2rem;
+     overflow-x: hidden;
+}
+
+h1{
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: burlywood;
+    width: clamp(200px, 50vw, 400px);
+    border: 2px solid rebeccapurple;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    display: inline-block;
+}
+
+ul{
+    width: 100vw;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+li{
+    margin: 1rem; 
+}
+
+a:hover{
+    background-color: rebeccapurple;
+    color: antiquewhite;
+}
