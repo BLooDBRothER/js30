@@ -1,0 +1,65 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: url("./Assestes/bg.jpg") red;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 2rem;
+    padding: 5rem 0 0 0;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.inner{
+    width: clamp(150px, 50vw, 500px);
+    
+}
+
+.input{
+    width: 100%;
+    outline: none;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(to right bottom, #FFF, #CCC);
+    border: 10px solid #acacac;
+    box-shadow: 0 0 20px rgb(255, 166, 0), inset 0 0 10px rgb(251, 255, 0);
+
+}
+
+ul{
+    padding: 0 0 .5rem 0;
+    max-height: 60vh;
+    overflow-y: auto;
+    backdrop-filter: blur(1rem);
+}
+
+li{
+    margin: 0 auto;
+    width: 80%;
+    padding: 1rem 2rem;
+}
+
+li:nth-child(even){
+    transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+  background: linear-gradient(to bottom,  #ffffff 0%,#EFEFEF 100%);
+}
+
+li:nth-child(odd){
+    transform: perspective(100px) rotateX(-3deg) translateY(3px);
+    background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%);
+}
