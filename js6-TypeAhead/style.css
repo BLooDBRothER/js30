@@ -10,7 +10,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 5rem 0 0 0;
 }
 
@@ -55,11 +55,29 @@ li{
 }
 
 li:nth-child(even){
-    transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+  transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
   background: linear-gradient(to bottom,  #ffffff 0%,#EFEFEF 100%);
 }
 
 li:nth-child(odd){
     transform: perspective(100px) rotateX(-3deg) translateY(3px);
     background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%);
+}
+
+.highlighted{
+    background-color: orange;
+    border-radius: .5rem;
+    color: black;
+    padding: .2rem;
+}
+
+li{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.population{
+    font-size: 1rem;
+    color: #4d4d4daf;
 }
