@@ -44,6 +44,7 @@ ul{
 ul{
     padding: 0 0 .5rem 0;
     max-height: 60vh;
+    overflow-x: hidden;
     overflow-y: auto;
     backdrop-filter: blur(1rem);
 }
@@ -52,6 +53,7 @@ li{
     margin: 0 auto;
     width: 80%;
     padding: 1rem 2rem;
+    transition: transform 1s ease;
 }
 
 li:nth-child(even){
