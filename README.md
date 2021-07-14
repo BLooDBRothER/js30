@@ -8,9 +8,10 @@
 3. JS 3 css variable
     * [JS 30 - 3 WES BOS](https://30-js.netlify.app/js3-cssVariable/index.html)
     * [Audio Slider](https://vloume-track-change.netlify.app/)
-4. [JS 4 Array Cardio](https://30-js.netlify.app/js4-Array-1/)
+4. [JS 4 Array Cardio - 1](https://30-js.netlify.app/js4-Array-1/)
 5. [JS 5 Image Gallery](https://30-js.netlify.app/js5-flexpannel/)
 6. [js 6 Type Ahead](https://30-js.netlify.app/js6-TypeAhead/)
+7. [js 7 Array Cardio - 2](https://30-js.netlify.app/js7-Array-2/)
 
 ## Reference
 
