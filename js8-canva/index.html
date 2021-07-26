@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+  <title>HTML5 Canvas</title>
+</head>
+<body>
+
+    <canvas id="draw" width="800" height="800"></canvas>
+    <div class="selection">
+        <label for="color">Color</label>
+        <input type="color" name="stroke-color" id="color" class="selection__color" value="#BADA55">
+        <label for="width">Line Width</label>
+        <input type="text" name="line-width" id="width" class="selection__pt" placeholder="line Width in pt" list="pts" value="10">
+        <datalist id="pts">
+            <option>6</option>
+            <option>10</option>
+            <option>12</option>
+            <option>14</option>
+            <option>16</option>
+            <option>20</option>
+            <option>22</option>
+            <option>25</option>
+            <option>28</option>
+            <option>30</option>
+            <option>34</option>
+            <option>37</option>
+            <option>40</option>
+            <option>44</option>
+            <option>48</option>
+          </datalist>
+    </div>
+
+<script src="./main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+canvas{
+    background-color: black;
+}
+
+.selection{
+    color: white;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.selection input{
+    margin: 0 1rem;
+}
