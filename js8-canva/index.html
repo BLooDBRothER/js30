@@ -2,17 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./icon.svg" type="image/x-icon">
   <link rel="stylesheet" href="./style.css">
-  <title>HTML5 Canvas</title>
+  <title>Canvas</title>
 </head>
 <body>
 
     <canvas id="draw" width="800" height="800"></canvas>
     <div class="selection">
-        <label for="color">Color</label>
-        <input type="color" name="stroke-color" id="color" class="selection__color" value="#BADA55">
-        <label for="width">Line Width</label>
-        <input type="text" name="line-width" id="width" class="selection__pt" placeholder="line Width in pt" list="pts" value="10">
+        <div class="color-cnt">
+            <label for="color">Color</label>
+            <input type="color" name="stroke-color" id="color" class="selection__color" value="#BADA55">
+        </div>
+       <div class="size">
+            <label for="width">Line Width</label>
+            <input type="number" name="line-width" id="width" class="selection__pt" placeholder="line Width in pt" list="pts" value="10">
+       </div>
         <datalist id="pts">
             <option>6</option>
             <option>10</option>
@@ -29,7 +35,19 @@
             <option>40</option>
             <option>44</option>
             <option>48</option>
-          </datalist>
+        </datalist>
+        <button id="eraser">Eraser</button>
+        <button id="clear">Clear</button>
+        <label for="Fun">Fun</label>
+        <input type="checkbox" name="fun" id="fun">
+    </div>
+    <div class="hint">
+        <p>
+            <b>[</b> - Increase Width
+        </p>
+        <p><b>]</b> - Decrease Width</p>
+        <p><b>E</b> - Eraser</p>
+        <p><b>CTRL + C</b> - Clear screen</p>
     </div>
 
 <script src="./main.js"></script>

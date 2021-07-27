@@ -2,6 +2,8 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100%;
+    overscroll-behavior: none;
     overflow: hidden;
 }
 
@@ -9,15 +11,64 @@ canvas{
     background-color: black;
 }
 
+.erase{
+    cursor: grab;
+}
+
+.active{
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.hint{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.349);
+    padding: .2rem .5rem;
+}
+
 .selection{
     color: white;
+    background-color: rgba(0, 0, 0, 0.349);
     display: flex;
     align-items: center;
+    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
     position: absolute;
     top: 10px;
     left: 10px;
+    padding: .2rem .5rem;
+}
+
+.selection > *{
+    margin: .5rem .2rem;
 }
 
 .selection input{
     margin: 0 1rem;
+    background-color: rgb(153, 149, 149);
+    border: none;
+    font-size: 1rem;
+}
+
+.selection .size input:focus{
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+    background-color: rgb(153, 149, 149);
+    border: none;
+    font-size: 1rem;
+    padding: .2rem .5rem;
+    margin: 0 .5rem !important;
+}
+#fun{
+    margin: 0 ;
+}
+
+button:hover, input:hover{
+    background-color: rgb(173, 92, 92);
 }
