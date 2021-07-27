@@ -12,6 +12,7 @@
 5. [JS 5 Image Gallery](https://30-js.netlify.app/js5-flexpannel/)
 6. [js 6 Type Ahead](https://30-js.netlify.app/js6-TypeAhead/)
 7. [js 7 Array Cardio - 2](https://30-js.netlify.app/js7-Array-2/)
+8. [js 8 HTML5 canvas](https://30-js.netlify.app/js8-canva/)
 
 ## Reference
 
