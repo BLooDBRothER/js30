@@ -6,40 +6,79 @@
 </head>
 <body>
 
-  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+  <p class="break" onClick="makeGreen()">×BREAK×DOWN×</p>
 
   <script>
     const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+    const p = document.querySelector('p');
 
     function makeGreen() {
-      const p = document.querySelector('p');
       p.style.color = '#BADA55';
       p.style.fontSize = '50px';
     }
 
     // Regular
+    console.log("hello");
 
     // Interpolated
+    console.log("Being called as %s", "BLooDBRothER");
 
     // Styled
+    console.log("%c BLooDBRothER", "font-size: 2rem; color: red; background-color: black; padding: 2rem")
 
     // warning!
+    console.warn("This is warning message");
 
     // Error :|
-
+    console.error("This is error message");
+    
     // Info
+    console.info("This info message");
 
     // Testing
-
+    console.assert(p.classList.contains("text"), "No it doesn't");
+    
     // clearing
+    // console.clear();
 
     // Viewing DOM Elements
+    console.dir(p);
 
     // Grouping together
+    dogs.forEach(dog => {
+      console.group(`${dog.name}`);
+      console.log(`Name: ${dog.name}`);
+      console.log(`Age: ${dog.age}`);
+      console.groupEnd(`${dog.name}`);
+    });
 
     // counting
+    console.groupCollapsed("count");
+    console.count("hell");
+    console.count("hell");
+    console.count("heaven");
+    console.count("hell");
+    console.count("heaven");
+    console.count("hell");
+    console.count("heaven");
+    console.count("hell");
+    console.count("heaven");
+    console.count("heaven");
+    console.count("hell");
+    console.groupEnd("count")
 
     // timing
+    async function gUser(){
+      console.time("fetch");
+      let resp = await fetch("https://api.github.com/users/bloodbrother");
+      let res = await resp.json();
+      console.log(res);
+      console.timeEnd("fetch");
+    }
+    gUser();
+
+
+  
 
   </script>
 </body>
