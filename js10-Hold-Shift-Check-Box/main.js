@@ -9,33 +9,44 @@ function unCheckRange(st, en){
     }
 }
 
+function utilUncheck(st, en, shiftLast){
+    // console.log( st, en, shiftLast)
+    shiftLast < st ? unCheckRange(shiftLast, en) : unCheckRange(en, shiftLast);
+    return st <= en ? st : en;
+    // console.log(shiftLast);
+}
+
 function checkRangeDown(st, en){
     let i=st;
-    if(st == en & shiftLast != -1){
-        console.log(i, st, shiftLast)
-        shiftLast < i ? unCheckRange(shiftLast, st) : unCheckRange(st, shiftLast);
-        shiftLast = -1;
+    // console.log("down", st, en, shiftLast)
+    if(( (st == en ) || st > shiftLast) & shiftLast != -1){
+        shiftLast = utilUncheck(st, en, shiftLast)
         return;
     }
     for(i; i>en; i--){
         if(!inputs[i].checked)
         {
             inputs[i].checked = true;
-            console.log(i, inputs[i]);
+            // console.log(i, inputs[i]);
             isAll = 0;
         }
     }
     shiftLast = en;
-    console.log(shiftLast);
+    // console.log(shiftLast);
 }
 
 function checkRangeUp(st, en){
     let i=st;
+    // console.log("up", st, en, shiftLast);
+    if((en < shiftLast) & shiftLast != -1){
+        shiftLast = utilUncheck(st, en, shiftLast)
+        return;
+    }
     for(i; i<en; i++){
         if(!inputs[i].checked)
         {
             inputs[i].checked = true;
-            console.log(i, inputs[i]);
+            // console.log(i, inputs[i]);
             isAll = 0;
         }
     }
@@ -53,7 +64,7 @@ inputs.forEach(input=>{
             else if(this.checked){
                 prevIndex[1] = res;
             }
-            console.log(prevIndex);
+            // console.log(prevIndex);
             return;
         }
         let st = prevIndex.length == 1 ? prevIndex[0] : prevIndex[1];
