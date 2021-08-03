@@ -53,6 +53,8 @@ html {
     padding: 0;
     cursor: pointer;
     max-width: 50px;
+    padding-left: .5rem;
+    background-color: rgba(0, 0, 0, 0.6);
   }
   
   .player__button:hover {
@@ -62,6 +64,7 @@ html {
   .player__slider {
     width: 10px;
     height: 30px;
+    
   }
   
   .player__controls {
@@ -102,15 +105,16 @@ html {
     width: 50%;
     background: #ffc600;
     flex: 0;
-    flex-basis: 20%;
+    flex-basis: 0%;
   }
 
   .player__time{
+      padding-right: 1rem;
       display: flex;
       align-items: center;
-      justify-content: center;
-      flex: .2;
-      font-size: 1rem;
+      justify-content: flex-end;
+      flex: .4;
+      font-size: clamp(.8rem, 3vw, 1rem);
       color: whitesmoke;
       cursor: default;
       background-color: rgba(0, 0, 0, 0.6);
@@ -128,14 +132,28 @@ html {
       display: none;
 
   }
+
+  #rate{
+      flex: .3;
+      border: none;
+      outline: none;
+      color: whitesmoke;
+      background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  input:focus{
+      outline: none;
+  }
   
   /* unholy css to style input type="range" */
   
   input[type=range] {
     -webkit-appearance: none;
-    background: transparent;
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
-    margin: 0 5px;
+    flex: .3;
+    margin: 0;
+    padding: 0 1rem 0 0;
   }
   
   input[type=range]:focus {
