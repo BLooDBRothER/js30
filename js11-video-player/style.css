@@ -16,6 +16,7 @@ html {
     background-size: cover;
     align-items: center;
     justify-content: center;
+    color: wheat;
   }
   
   .player {
@@ -54,8 +55,8 @@ html {
     max-width: 50px;
   }
   
-  .player__button:focus {
-    border-color: #ffc600;
+  .player__button:hover {
+    color: #ffc600;
   }
   
   .player__slider {
@@ -101,7 +102,31 @@ html {
     width: 50%;
     background: #ffc600;
     flex: 0;
-    flex-basis: 50%;
+    flex-basis: 20%;
+  }
+
+  .player__time{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: .2;
+      font-size: 1rem;
+      color: whitesmoke;
+      cursor: default;
+      background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .player__mini{
+      --move: 0%;
+      width: 200px;
+      height: 112.50px;
+      position: absolute;
+      bottom: 50px;
+      left: var(--move);
+      /* transform: translateX(calc(-1 * var(--move))); */
+      /* transform: translateX(-50%); */
+      display: none;
+
   }
   
   /* unholy css to style input type="range" */
