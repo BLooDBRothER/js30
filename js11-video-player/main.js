@@ -44,9 +44,7 @@ function updateProgress(){
 }
 
 function forwardProgress(e, elem){
-    console.log(returnOffset(e));
     let percent = (returnOffset(e)/elem.offsetWidth)*100;
-    console.log(percent);
     let currTime = (percent/100)*video.duration;
     miniPlayer.currentTime = currTime;
     document.documentElement.style.setProperty('--move', `${percent}%`);
@@ -80,10 +78,6 @@ video.addEventListener("timeupdate", (e) => {
     updateTime();
     updateProgress();
 });
-
-video.addEventListener("canplaythrough", function(e){
-    console.log(e);
-})
 
 progress.addEventListener("mousedown", function(e){
     miniPlayer.style.display = "initial";
@@ -130,7 +124,6 @@ progress.addEventListener("touchmove", function(e){
 });
 
 progress.addEventListener("touchend", function(e){
-    console.log("hello");
     miniPlayer.style.display = "none";
     isPressed = false;
     video.currentTime = miniPlayer.currentTime;
