@@ -15,6 +15,7 @@
 8. [js 8 HTML5 canvas](https://30-js.netlify.app/js8-canva/)
 9. [js 9 Developer Tools](https://30-js.netlify.app/js9-console/)
 10. [js 10 Hold Shift to Check](https://30-js.netlify.app/js10-hold-shift-check-box/)
+11. [js11 HTML Video Player](https://30-js.netlify.app/js11-video-player/index.html)
 
 ## Reference
 
