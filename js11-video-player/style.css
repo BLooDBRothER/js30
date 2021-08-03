@@ -5,6 +5,10 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+
+  :root{
+      --move: 0%;
+  }
   
   body {
     margin: 0;
@@ -40,6 +44,7 @@ html {
   }
   
   .player__video {
+    object-fit: cover;
     width: 100%;
   }
   
@@ -85,6 +90,10 @@ html {
   .player:hover .progress {
     height: 15px;
   }
+
+  .player:hover .progress::before{
+      display: initial;
+  }
   
   .player__controls > * {
     flex: 1;
@@ -99,6 +108,19 @@ html {
     transition: height 0.3s;
     background: rgba(0,0,0,0.5);
     cursor: ew-resize;
+  }
+
+  .progress::before{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      top: 50%;
+      left: var(--move);
+      transform: translate(-50%, -50%);
+      background-color: red;
+      display: none;
   }
   
   .progress__filled {
@@ -126,12 +148,16 @@ html {
       height: 112.50px;
       position: absolute;
       bottom: 50px;
-      left: var(--move);
+      left: 0;
       /* transform: translateX(calc(-1 * var(--move))); */
       /* transform: translateX(-50%); */
       display: none;
 
   }
+
+  /* .player__pointer{
+
+  } */
 
   #rate{
       flex: .3;

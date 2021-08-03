@@ -9,7 +9,7 @@
 <body>
 
    <div class="player">
-     <video class="player__video viewer" src="652333414.mp4" preload="auto"></video>
+     <video class="player__video viewer" src="652333414.mp4" preload="auto" poster="./poster.jpg"></video>
 
      <div class="player__controls">
        <div class="progress">
@@ -29,7 +29,8 @@
        <button data-skip="10" class="player__button">10S »</button>
        <span class="player__time">0 : 0</span>
      </div>
-     <video class="player__mini hint" src="652333414.mp4" preload="auto"></video>
+     <div class="player__pointer"></div>
+     <video class="player__mini hint" src="652333414.mp4" preload="metadata"></video>
    </div>
 
   <script src="./main.js"></script>

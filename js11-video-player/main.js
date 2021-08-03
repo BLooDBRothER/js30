@@ -38,6 +38,9 @@ function updateSkip(){
 function updateProgress(){
     let percent = (video.currentTime/video.duration)*100;
     progressBar.style.flexBasis = `${percent}%`;
+    if(!isPressed){
+        document.documentElement.style.setProperty('--move', `${percent}%`);
+    }
 }
 
 function forwardProgress(e, elem){
@@ -46,6 +49,7 @@ function forwardProgress(e, elem){
     console.log(percent);
     let currTime = (percent/100)*video.duration;
     miniPlayer.currentTime = currTime;
+    document.documentElement.style.setProperty('--move', `${percent}%`);
     // progressBar.style.flexBasis = `${percent}%`;
 }
 
@@ -111,7 +115,6 @@ progress.addEventListener("mouseleave", function(e){
 });
 
 progress.addEventListener("touchstart", function(e){
-    console.log("hello");
     miniPlayer.style.display = "initial";
     isPressed = true;
     mid = (miniPlayer.offsetWidth / 2);
@@ -121,9 +124,6 @@ progress.addEventListener("touchstart", function(e){
 });
 
 progress.addEventListener("touchmove", function(e){
-    console.log("hello");
-
-    if(!isPressed) return;
 
     updateMiniPlayer(e, this);
     forwardProgress(e, this);
