@@ -10,12 +10,13 @@
     * [Audio Slider](https://vloume-track-change.netlify.app/)
 4. [JS 4 Array Cardio - 1](https://30-js.netlify.app/js4-Array-1/)
 5. [JS 5 Image Gallery](https://30-js.netlify.app/js5-flexpannel/)
-6. [js 6 Type Ahead](https://30-js.netlify.app/js6-TypeAhead/)
-7. [js 7 Array Cardio - 2](https://30-js.netlify.app/js7-Array-2/)
-8. [js 8 HTML5 canvas](https://30-js.netlify.app/js8-canva/)
-9. [js 9 Developer Tools](https://30-js.netlify.app/js9-console/)
-10. [js 10 Hold Shift to Check](https://30-js.netlify.app/js10-hold-shift-check-box/)
-11. [js11 HTML Video Player](https://30-js.netlify.app/js11-video-player/index.html)
+6. [JS 6 Type Ahead](https://30-js.netlify.app/js6-TypeAhead/)
+7. [JS 7 Array Cardio - 2](https://30-js.netlify.app/js7-Array-2/)
+8. [JS 8 HTML5 canvas](https://30-js.netlify.app/js8-canva/)
+9. [JS 9 Developer Tools](https://30-js.netlify.app/js9-console/)
+10. [JS 10 Hold Shift to Check](https://30-js.netlify.app/js10-hold-shift-check-box/)
+11. [JS 11 HTML Video Player](https://30-js.netlify.app/js11-video-player/index.html)
+12. [JS 12 Key sequence Detection](https://30-js.netlify.app/js12-KonamiCode/)
 
 ## Reference
 
