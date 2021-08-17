@@ -17,6 +17,8 @@
 10. [JS 10 Hold Shift to Check](https://30-js.netlify.app/js10-hold-shift-check-box/)
 11. [JS 11 HTML Video Player](https://30-js.netlify.app/js11-video-player/index.html)
 12. [JS 12 Key sequence Detection](https://30-js.netlify.app/js12-KonamiCode/)
+13. [js 13 Scroll Animation](https://30-js.netlify.app/js13-AOS)
+14. [js 14 Reference vs Copy](https://30-js.netlify.app/js14-ref-copy/)
 
 ## Reference
 
