@@ -19,6 +19,7 @@
 12. [JS 12 Key sequence Detection](https://30-js.netlify.app/js12-KonamiCode/)
 13. [js 13 Scroll Animation](https://30-js.netlify.app/js13-AOS)
 14. [js 14 Reference vs Copy](https://30-js.netlify.app/js14-ref-copy/)
+15. [js 15 Local Storage](https://30-js.netlify.app/js15-LocalAndEvent/)
 
 ## Reference
 
