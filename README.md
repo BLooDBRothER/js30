@@ -21,7 +21,8 @@
 14. [JS 14 Reference vs Copy](https://30-js.netlify.app/js14-ref-copy/)
 15. [JS 15 Local Storage](https://30-js.netlify.app/js15-LocalAndEvent/)
 16. [JS 16 Mouse Move Sahdow](https://30-js.netlify.app/js16-shadow/)
-17. [js 17 sortin without article](https://30-js.netlify.app/js17-sorting-WO-article/)
+17. [JS 17 sortin without article](https://30-js.netlify.app/js17-sorting-WO-article/)
+18. [JS 18 Adding Up Times with Reduce](https://30-js.netlify.app/js18-Array-Reduce/)
 
 ## Reference
 
